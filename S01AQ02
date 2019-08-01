@@ -1,0 +1,12 @@
+def mul():
+    n = 1
+    c = 0
+    while c < 10:
+        a = 17 * n
+        n = n + 1
+        print("17 *",n-1," =",a)
+        c = c + 1
+
+mul()
+
+        
