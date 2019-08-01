@@ -1,0 +1,8 @@
+def car(old_value,new_value,fuelin_tank,remaining_fuel):
+    fuel = fuelin_tank - remaining_fuel
+    km = new_value - old_value
+    milage = km / fuel
+    print("car travels",km,"killo meter")
+    print("car milage is:",milage,"km")
+
+car(int(input("enter start of the meter:")),(int(input("\nenter the end of the meter:"))),(int(input("\nenter fuel in tank in leters:" ))),(int(input("enter remaining fuel in tank:")))) 
