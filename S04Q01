@@ -1,0 +1,13 @@
+def chemicalplant(ethanolin_tank,tank_capacity):
+    if ethanolin_tank <= tank_capacity:   
+        total_ethanol =  tank_capacity - ethanolin_tank 
+        percentage_ethanol = (total_ethanol // tank_capacity) * 100
+    
+        if percentage_ethanol > 80:
+            print("Close the Valve!!!!!!!!!!!")
+        elif percentage_ethanol < 20:
+            print("By More Liquid!!!!!!!!!!!")
+    else:
+        print("enter valid tank capacity or ethanol in tank")
+
+chemicalplant(int(input("\nenter remaining ethanol in tank in leters:" )),int(input("enter tank capacity in leters:")))
