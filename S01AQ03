@@ -1,0 +1,14 @@
+def mul(num):
+    n = 1
+    c = 0
+    print("the tables for",num,"is:")
+    
+    while c < 10:
+        a = num * n
+        n = n + 1
+        print(num,'*',n-1,'=',a) 
+        c = c + 1
+
+mul(int(input("enter a table number:")))
+        
+
