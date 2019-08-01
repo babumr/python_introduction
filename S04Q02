@@ -1,0 +1,33 @@
+def std(english,science,maths):
+    if english <= 80:
+        eng_total = (english / 80) * 80
+    else:
+        print("enter valid marks for english")
+
+    if science <= 90:
+        sci_total = (science / 90) * 90
+    else:
+        print("enter valid marks for science")
+    
+    if maths <= 100:
+        mat_total = (maths / 100) * 100
+    else:
+        print("enter valid marks for maths")
+    
+   
+        total = eng_total + sci_total + mat_total
+        percentage = (total / 270) * 100
+        print("percentage:",percentage,"%")
+       
+        if percentage >= 90:
+            print("First Class")
+        elif percentage >= 75:
+            print("Second Class")
+        elif percentage >= 35:
+            print("Avrage")
+        else:
+            print("fail")
+
+   
+std(int(input("\nenter marks for english:")),int(input("\nenter marks for science:")),int(input("\nenter marks for maths:")))
+
