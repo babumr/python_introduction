@@ -1,0 +1,6 @@
+def hello():
+    print("hello welocome to python")
+
+#main starts here
+hello()
+
