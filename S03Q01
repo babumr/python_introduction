@@ -1,0 +1,15 @@
+def num(n1,n2):
+    if n1 > 9 and n1 < 100:
+        print("two digit number:",n1)
+    elif n1 > 99 and n1 < 1000:
+        print("three digit number:",n1)
+
+    if n2 > 9 and n2 < 100:
+            print("two digit number:",n2)
+    elif n2 > 99 and n2 < 1000:
+            print("three digit number:",n2)
+    else:
+        print("\nentered numbers:",n1,n2)
+        
+       
+num(int(input("enter first no:")),int(input("enter second no:")))
