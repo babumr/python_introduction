@@ -1,0 +1,11 @@
+def car(total_fuel,remaining_fuel,tank_capacity):
+    km = 560
+    fuel = total_fuel - remaining_fuel
+    milage = km / fuel
+    stops = fuel // tank_capacity
+    
+    print("car travels",km,"killo meter")
+    print("car milage is:",milage,"km")
+    print("No of stops for refuellig is:",stops,"stops")
+
+car((int(input("\nenter total fuel in leters:" ))),(int(input("enter remaining fuel in tank in leters:"))),(int(input("enter tank capacity in leters:")))) 
