@@ -1,0 +1,27 @@
+def one_dig(nm):
+    n = nm + 7
+    return n
+def two_dig(nm):
+    n = nm ** 5
+    return n
+def three_dig(nm):
+    n1 = int(input("enter another number:"))
+    n = nm + n1
+    return n
+
+num = int(input("enter a no:"))
+
+
+if num > 0 and num < 10:
+    onedig = one_dig(num)
+    print("It is one digit number\nadded 7 to",num,"\n",onedig)
+elif num > 9 and num < 100:
+    twodig = two_dig(num)
+    print("It is two digit number\npowerd 5 to ",num,"\n",twodig)
+elif num > 99 and num < 1000:
+    threedig = three_dig(num)
+    print("It is three digit number\nadded another number to",num,"\n",threedig)
+else:
+    print("entered number is:",num)
+
+       
