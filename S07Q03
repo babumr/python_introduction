@@ -1,0 +1,21 @@
+def sentence(sen):
+    lcharacter=(sen[-1])
+    print("\nlast chracter of sentence is:",lcharacter)
+    l5character=(sen[-5:])
+    print("\nlast five chracter of sentence is:",l5character)
+    f2character=(sen[1])
+    f5character=(sen[4])
+    print("\n2nd and 5th chracter of sentence is:",f2character,f5character)
+    character = len(sen)
+    if character % 2 == 0:
+        print("\nthere is no center character")
+    else:
+        center = character / 2
+        center1= int(center)
+        cenchar1 =(sen[center1-1])
+        cenchar2 =(sen[center1])
+        cenchar3 =(sen[center1+1])
+        print("\nthe center 3 characters is:",cenchar1,cenchar2,cenchar3)
+
+
+sentence(str(input("\nenter the sentence:")))
