@@ -1,0 +1,6 @@
+fname = str(input("enter first name:"))
+lname = str(input("enter last name:"))
+
+print("Name:",fname,"Surname:",lname)
+
+print(" \n",fname.upper(),lname.upper(),"\n ----------------","\n",fname.lower(),lname.lower())
