@@ -1,0 +1,15 @@
+def name(fname,lname):
+    print(fname,lname)
+    fname2=len(fname)
+    lname2=len(lname)
+    while True:
+        if fname2 > 2 and lname2 > 2:
+            fname2=len(fname)
+            lname2=len(lname)
+            fname=fname[:-1]
+            lname=lname[:-1]
+            print(fname,lname)
+            
+            
+name(str(input("enter first name:")),str(input("enter last name:")))
+
