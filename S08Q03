@@ -1,0 +1,16 @@
+while  True:
+    num = int(input("enter a number:"))
+    if num == 5:
+        print("00001111222233334444")
+        break
+    elif num == 3:
+        print("001122")
+        break
+    
+    
+
+    
+               
+
+
+
