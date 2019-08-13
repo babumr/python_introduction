@@ -1,0 +1,3 @@
+num = (int(input("enter a number:")))
+nodig = len(str(num))
+print("number of digits in the enterd number is:",nodig)
