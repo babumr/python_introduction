@@ -1,0 +1,33 @@
+def one_dig(nm):
+    n = nm + 7
+    return n
+def two_dig(nm):
+    n = nm ** 5
+    return n
+def three_dig(nm):
+    n1 = int(input("enter another number:"))
+    n = nm + n1
+    return n
+
+num = int(input("enter a no:"))
+
+
+if num > 0 and num < 10:
+    onedig = one_dig(num)
+    unit = str(onedig)
+    unit1 = unit[-1]
+    print("It is one digit number\nadded 7 to",num,"\nunit place number is:",unit1)
+elif num > 9 and num < 100:
+    twodig = two_dig(num)
+    unit = str(twodig)
+    unit1 = unit[-2:]
+    print("It is two digit number\npowerd 5 to ",num,"\nlast 2 unit place numbers is:",unit1)
+elif num > 99 and num < 1000:
+    threedig = three_dig(num)
+    unit = str(threedig)
+    unit1 = unit[-3:]
+    print("It is three digit number\nadded another number to",num,"\nlast 3 unit place  number is:",unit1)
+else:
+    print("entered number is:",num)
+
+       
