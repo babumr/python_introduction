@@ -1,0 +1,17 @@
+num = 12
+n = (num)/2
+a = 1
+b = 1
+print("first 12 even fibonacci numbers are:")
+c = 0
+while c < n:
+    a = a + b
+    b = b + a
+    
+    if a % 2 == 0:
+        print(a)
+    if b % 2 == 0:
+        print(b)
+        c = c + 1
+        
+   
