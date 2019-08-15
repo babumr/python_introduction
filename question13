@@ -8,9 +8,9 @@ print("\n---square of three digit numbers is---")
 c = 0
 for i in numlist:
     if i > 99 and i < 1000:
-        squ = i * i
-        print("\n->the square of", i ,"=", squ)
-        c= c + 1
+        squroot = i ** (0.5)
+        print("\n->the square root of", i ,"=", squroot)
+        c = c + 1
     
             
         
