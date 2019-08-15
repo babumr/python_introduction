@@ -4,7 +4,7 @@ while True:
     numlist.append(num)
     if num == 0:
         break
-print("\n---square of three digit numbers is---")    
+    
 c = 0
 for i in numlist:
     if i > 99 and i < 1000:
