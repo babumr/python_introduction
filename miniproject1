@@ -1,0 +1,55 @@
+def num(given_no):
+    if given_no >= 1 and given_no <= 25:
+        passcode = 12
+        number = given_no -  passcode
+        if number <= 2 and number >= -2:
+            print("InVaLiD PaSsCoDe")
+            c = 1
+            
+            while c == 1:
+                n = (int(input("Enter Passcode:")))
+                if n == passcode:
+                    print("Welcome !!!")
+                    break
+                if given_no > 1 and given_no < 25:
+                    passcode = 12
+                    number1 = n -  passcode
+                    if number1 <= 2 and number1 >= -2:
+                        print("InVaLiD PaSsCoDe")
+                    elif number1 > 2:
+                        print("INVALID PASSCODE")
+                    elif number1 < -2:
+                        print ("invalid passcode")
+                    break
+                else:
+                    print("enter no < 25")
+
+        elif number > 2:
+            print("INVALID PASSCODE")
+        elif number < -2:
+            print ("invalid passcode")
+
+        
+    else:
+        print("enter no < 25")
+
+    
+c = 1
+while c <= 4:
+    n = (int(input("Enter Passcode:")))
+    passcode = 12
+    if n == passcode:
+        print("Welcome !!!")
+        break
+    elif c == 4:
+        if n >= 10 and n <= 14:
+            a = num(n)
+        else:
+            print("Login FAILED !!!")
+        break
+    else:
+        a = num(n)
+        c += 1
+
+
+
