@@ -1,0 +1,21 @@
+def fibo(n):
+    a = 1
+    b = 1
+    while True:
+        if (a+b) <= n:
+            a = a+b
+            b = a+b
+        else:
+            break
+    if n == a or n == b:
+        return "ye it is fibonacci number "
+    dif1 = n - a
+    dif2 = b - n
+    if dif1 == dif2:
+        return "nearest fibonacci number is: "+str(a)
+    else:
+        return "nearest fibonacci number is: "+str(b)
+
+x = fibo(int(input("enter your number: ")))
+print(x)
+   
