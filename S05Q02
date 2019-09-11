@@ -1,0 +1,37 @@
+numlist=[]
+while True:
+    num = int(input("enter the number:"))
+    if num == 0:
+        break
+    numlist.append(num)
+
+for i in numlist:
+    maximum = max(numlist)
+    minimum = min(numlist)
+print("\nThe largest number is:",maximum)
+print("\nThe smallest number is:",minimum)    
+
+c = 0
+for i in numlist:
+    if i > 0 and i < 10:
+       c += 1
+print("\nnumber of single digits are:",c)
+c = 0
+for i in numlist:
+    if i > 9 and i < 100:
+       c += 1
+print("\nnumber of two digits are:",c)
+c = 0
+for i in numlist:
+    if i > 99 and i < 1000:
+       c += 1
+print("\nnumber of three digits are:",c)
+
+    
+    
+
+  
+    
+    
+    
+    
