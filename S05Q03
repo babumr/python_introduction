@@ -1,0 +1,16 @@
+num = int(input("enter the number:"))
+print("squares of numbers < than",num)
+for i in range(num+1):
+    n = i ** 2
+    if n < num:
+        print(n)
+
+
+
+
+
+
+
+
+
+
